@@ -218,6 +218,11 @@ bar {
         binding_mode       #2f343a #900000 #ffffff
     }
 }
+
+# gaps
+gaps inner 10
+gaps outer 5
+
 # brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 3%+
