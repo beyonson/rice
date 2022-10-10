@@ -193,8 +193,8 @@ bindsym Mod1+r mode "resize"
 
 # color settings
 # class                 border  backgr. text    indicator child_border
-client.focused          #1f1c2b #1f1c2b #5f7687 #94a4b3   #1f1c2b
-client.focused_inactive #0f0d17 #0f0d17 #ffffff #484e50   #0f0d17
+client.focused          #0f0d17 #0f0d17 #5f7687 #94a4b3   #1f1c2b
+client.focused_inactive #0f0d17 #0f0d17 #5f7687 #94a4b3   #1f1c2b
 client.unfocused        #0f0d17 #0f0d17 #5f7687 #292d2e   #0f0d17
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -208,7 +208,7 @@ bar {
 
     colors {
         background #171324
-        statusline #ffffff
+        statusline #5f7687
         separator #666666
 
         focused_workspace  #494e52 #494e52 #ffffff
