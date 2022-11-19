@@ -1,0 +1,205 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #080515
+background-alt = #22182B
+foreground = #C5C8C6
+primary = #B294BB
+secondary = #8ABEB7
+alert = #A54242
+disabled = #707880
+green = #B5BD68 
+yellow = #E8CC4F
+red = #DE7257
+
+[bar/bar1]
+width = 100%
+height = 18pt
+radius = 6
+bottom = true
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 0
+padding-right = 1
+
+module-margin = 1
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = monospace:size=10;2
+font-1 = "Symbols Nerd Font:size=12;3"
+
+modules-left = xworkspaces nemo minecraft spotify firefox
+modules-right = xkeyboard pulseaudio battery 
+modules-center = date
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+override-redirect = false
+
+[module/xworkspaces]
+type = internal/xworkspaces
+
+label-active = %name%
+label-active-background = ${colors.background-alt}
+label-active-underline= ${colors.primary}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.disabled}
+label-empty-padding = 1
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:60:...%
+
+[module/battery]
+type 	= internal/battery
+low-at  = 5
+full-at = 95
+battery = BAT0
+adapter = AC
+poll-interval = 5
+
+label-full = 
+format-full = <label-full>
+format-full-foreground = ${colors.green}
+
+label-charging =  %{F#B5BD68}%percentage%%%{F-}
+format-charging = <animation-charging>
+format-charging-foreground = ${colors.green}
+
+label-discharging = %{F#B5BD68}%percentage%%%{F-}
+format-discharging = <ramp-capacity> 
+format-discharging-foreground = ${colors.green}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+;format-volume-prefix = "VOL "
+;format-volume-prefix-foreground = ${colors.primary}
+format-volume = <label-volume>
+format-volume-foreground = ${colors.yellow}
+label-volume = 墳
+
+format-muted = <label-muted>
+format-muted-foreground = ${colors.yellow}
+label-muted = 婢
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format = <label-indicator>
+
+label-layout = %layout%
+label-layout-foreground = ${colors.primary}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-foreground = ${colors.red}
+label-indicator-background = ${colors.red}
+
+label-indicator-on-capslock-foreground = ${colors.red}
+label-indicator-on-capslock = 
+
+[module/date]
+type = internal/date
+interval = 1
+
+date =  %H:%M 
+date-alt =  %Y-%m-%d %H:%M:%S
+
+label = %date%
+label-foreground = ${colors.primary}
+
+format = <label>
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+[module/nemo]
+type = custom/text
+content = 
+content-foreground = ${colors.primary}
+click-left = nemo
+
+[module/firefox]
+type = custom/text
+content = 
+content-foreground = ${colors.primary}
+click-left = firefox
+
+[module/spotify]
+type = custom/text
+content = 
+content-foreground = ${colors.primary}
+click-left = spotify-launcher
+
+[module/minecraft]
+type = custom/text
+content = 
+content-foreground = ${colors.primary}
+click-left = minecraft-launcher
+
+; vim:ft=dosini
