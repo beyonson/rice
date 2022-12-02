@@ -6,6 +6,7 @@ POLYBAR=$HOME/.config/polybrar/
 PICOM=$HOME/.config/picom/
 ALACRITTY=$HOME/.config/alacritty/
 I3=$HOME/.config/i3/
+CONFIG=$HOME/.config/
 
 if [ $UID -ne 0 ]; then
     echo "Must be root"
@@ -14,38 +15,22 @@ fi
 
 
 # POLYBAR
-if [ ! -d "$POLYBAR" ]; then
-    echo "Making polybar dir"
-    mkdir $POLYBAR
-fi
 echo "Setting polybar config" 
-cp polybar/config.ini $POLYBAR
+cp -r polybar $CONFIG
 
 
 # PICOM
-if [ ! -d "$PICOM" ]; then
-    echo "Making picom dir"
-    mkdir $PICOM
-fi
 echo "Setting picom config" 
-cp picom/picom.conf $PICOM
+cp -r picom $CONFIG
 
 
 # I3
-if [ ! -d "$I3" ]; then
-    echo "Making i3 dir"
-    mkdir $I3
-fi
 echo "Setting i3 config" 
-cp i3/config $I3
+cp -r i3 $CONFIG
 
 
 # ALACRITTY
-if [ ! -d "$ALACRITTY" ]; then
-    echo "Making alacritty dir"
-    mkdir $ALACRITTY
-fi
 echo "Setting alacritty config" 
-cp alacritty/alacritty.yml $ALACRITTY
+cp -r alacritty $CONFIG
 
 echo "Done moving configs"
