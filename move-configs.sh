@@ -1,15 +1,17 @@
 #!/bin/bash
 #
 #
-POLYBAR=~/.config/polybar/
-PICOM=~/.config/picom/
-ALACRITTY=~/.config/alacritty/
-I3=~/.config/i3/
+HOME="$(getent passwd $SUDO_USER | cut -d: -f6)"
+POLYBAR=$HOME/.config/polybrar/
+PICOM=$HOME/.config/picom/
+ALACRITTY=$HOME/.config/alacritty/
+I3=$HOME/.config/i3/
 
 if [ $UID -ne 0 ]; then
     echo "Must be root"
     exit 0
 fi
+
 
 # POLYBAR
 if [ ! -d "$POLYBAR" ]; then
@@ -17,7 +19,7 @@ if [ ! -d "$POLYBAR" ]; then
     mkdir $POLYBAR
 fi
 echo "Setting polybar config" 
-cp ./polybar/config.ini "$POLYBAR"
+cp polybar/config.ini $POLYBAR
 
 
 # PICOM
@@ -26,7 +28,7 @@ if [ ! -d "$PICOM" ]; then
     mkdir $PICOM
 fi
 echo "Setting picom config" 
-cp ./picom/picom.conf "$PICOM"
+cp picom/picom.conf $PICOM
 
 
 # I3
@@ -35,7 +37,7 @@ if [ ! -d "$I3" ]; then
     mkdir $I3
 fi
 echo "Setting i3 config" 
-cp ./i3/config "$I3"
+cp i3/config $I3
 
 
 # ALACRITTY
@@ -44,6 +46,6 @@ if [ ! -d "$ALACRITTY" ]; then
     mkdir $ALACRITTY
 fi
 echo "Setting alacritty config" 
-cp ./alacritty/alacritty.yml "$ALACRITTY"
+cp alacritty/alacritty.yml $ALACRITTY
 
 echo "Done moving configs"
