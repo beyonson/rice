@@ -27,6 +27,7 @@ for_window [class="^.*"] border pixel 0
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id ~/.config/polybar/launch.sh &
+exec --no-startup-id nm-applet --sm-disable
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -41,10 +42,10 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- && $refresh_i3status
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 3
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 3
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+ && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%- && $refresh_i3status
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +3
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -3
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -62,7 +63,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec --no-startup-id rofi -combi-modi drun#ssh -theme gruvbox-dark -font "monospace 10" -show combi
+bindsym $mod+p exec --no-startup-id rofi -combi-modi drun#ssh -theme catppuccin-mocha -show combi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
