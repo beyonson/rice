@@ -6,4 +6,4 @@ BACKGROUND=~/Pictures/Wallpapers/house.jpg
 
 nitrogen --set-scaled $BACKGROUND
 
-picom --config ~/.config/picom.conf &
+picom --config ~/.config/picom/picom.conf &
