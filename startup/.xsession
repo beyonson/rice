@@ -2,9 +2,8 @@
 
 
 # background and terminal colors
-BACKGROUND=~/Pictures/Wallpapers/ducks.jpg
+BACKGROUND=~/Pictures/Wallpapers/house.jpg
 
 nitrogen --set-scaled $BACKGROUND
-polybar bar1 &
 
 picom --config ~/.config/picom.conf &

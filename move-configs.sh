@@ -33,4 +33,8 @@ cp -r i3 $CONFIG
 echo "Setting alacritty config" 
 cp -r alacritty $CONFIG
 
+
+# STARTUP
+echo "Setting startup scripts"
+cp -r startup/.xsession $HOME
 echo "Done moving configs"
