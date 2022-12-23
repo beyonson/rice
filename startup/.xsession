@@ -5,6 +5,7 @@
 BACKGROUND=~/Pictures/Wallpapers/adv.jpg
 
 nitrogen --set-scaled $BACKGROUND
-polybar bar1 &
+polybar main &
+sxhkd &
 
 picom --config ~/.config/picom/picom.conf &
