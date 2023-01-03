@@ -5,6 +5,7 @@
 BACKGROUND=~/Pictures/Wallpapers/cangles.jpg
 
 nitrogen --set-scaled $BACKGROUND
+polybar background &
 polybar main &
 sxhkd &
 
