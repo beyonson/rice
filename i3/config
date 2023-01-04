@@ -39,13 +39,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-exec --no-startup-id polybar background &
-exec --no-startup-id polybar main &
-exec --no-startup-id polybar wlan &
-exec --no-startup-id polybar sound &
-exec --no-startup-id polybar date &
-exec --no-startup-id polybar battery &
-
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -70,7 +63,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec --no-startup-id rofi -combi-modi drun#ssh -theme catppuccin-mocha -show combi
+bindsym $mod+p exec --no-startup-id rofi -combi-modi drun#ssh -theme candle-theme -show combi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -203,7 +196,7 @@ bindsym $mod+r mode "resize"
 
 gaps inner 10
 gaps outer 0
-gaps top 25
+gaps top 30
 
 # color settings
 # class                 border  backgr. text    indicator child_border

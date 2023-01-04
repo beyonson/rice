@@ -5,6 +5,11 @@
 BACKGROUND=~/Pictures/Wallpapers/cangles.jpg
 
 nitrogen --set-scaled $BACKGROUND
-polybar bar1 &
+polybar background &
+polybar logo &
+polybar right &
+polybar date &
+polybar launch &
+polybar i3 &
 
 picom --config ~/.config/picom/picom.conf &

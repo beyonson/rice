@@ -22,7 +22,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x000000'
+    background: '0x34393d'
     foreground: '0xc5c8c6'
 
   # Normal colors
