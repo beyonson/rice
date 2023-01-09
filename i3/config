@@ -18,6 +18,7 @@ font pango:monospace 0
 #default_border pixel 2
 #default_floating_border pixel 2
 for_window [class="^.*"] border pixel 0
+for_window [title="Alacritty"] border pixel 45
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -201,8 +202,8 @@ gaps top 30
 # color settings
 # class                 border  backgr. text    indicator child_border
 client.focused          #ffffff #ffffff #5f7687 #ffffff   #ffffff
-client.focused_inactive #00000000 #00000000 #ffffff #484e50   #00000000
-client.unfocused        #00000000 #00000000 #5f7687 #292d2e   #00000000
+client.focused_inactive #ffffff #ffffff #ffffff #484e50   #ffffff
+client.unfocused        #ffffff #ffffff #5f7687 #292d2e   #ffffff
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
