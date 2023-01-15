@@ -2,7 +2,7 @@
 
 
 # background and terminal colors
-BACKGROUND=~/Pictures/Wallpapers/adv.jpg
+BACKGROUND=~/Pictures/Wallpapers/orange.jpg
 
 nitrogen --set-scaled $BACKGROUND
 polybar background &
