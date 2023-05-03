@@ -2,7 +2,7 @@
 
 
 # background and terminal colors
-BACKGROUND=~/Pictures/Wallpapers/HighSierra.jpg
+BACKGROUND=~/Pictures/Wallpapers/adv.jpg
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ]
 then
