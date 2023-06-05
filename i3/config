@@ -9,6 +9,15 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# on startup
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/adv.jpg
+exec_always --no-startup-id picom &
+exec_always --no-startup-id polybar background --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id polybar logo --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id polybar date --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id polybar i3 --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id polybar right --config=~/.config/polybar/config.ini &
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -55,7 +64,6 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
@@ -195,10 +203,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 10
-gaps outer 0
-gaps top 30
-
 # color settings
 # class                 border  backgr. text    indicator child_border
 client.focused          #ffffff #ffffff #5f7687 #ffffff   #ffffff
@@ -209,6 +213,9 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
+# gaps
+gaps inner 10
+gaps top 20
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
