@@ -10,13 +10,13 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # on startup
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/adv.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/adv.jpg
 exec_always --no-startup-id picom &
-exec_always --no-startup-id polybar background --config=~/.config/polybar/config.ini &
-exec_always --no-startup-id polybar logo --config=~/.config/polybar/config.ini &
-exec_always --no-startup-id polybar date --config=~/.config/polybar/config.ini &
-exec_always --no-startup-id polybar i3 --config=~/.config/polybar/config.ini &
-exec_always --no-startup-id polybar right --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-1 polybar background --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-1 polybar logo --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-1 polybar date --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-1 polybar i3 --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-1 polybar right --config=~/.config/polybar/config.ini &
 
 set $mod Mod1
 
