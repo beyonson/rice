@@ -5,7 +5,7 @@ This repo holds some nice configs for a simple Linux rice
 ## Usage
 
 install apps:
-* run 'sudo pacman -S i3-gaps polybar picom alacritty'
+* run 'sudo pacman -S i3-gaps polybar picom alacritty rofi nitrogen ttf-nerd-fonts-symbols-mono'
 
 create configs:
 * run 'sudo ./move-configs.sh'
