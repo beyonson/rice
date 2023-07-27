@@ -3,10 +3,10 @@
     bg-col-light: #1d532f;
     border-col: #1d532f;
     selected-col: #1d532f;
-    blue: #2b2d30;
+    blue: #7a9e7a;
     fg-col: #7a9e7a;
-    fg-col2: #e60012;
-    grey: #6c7086;
+    fg-col2: #e7e890;
+    grey: #7a9e7a;
 
     width: 600;
     font: "JetBrainsMono Nerd Font 14";
