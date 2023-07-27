@@ -7,11 +7,6 @@ BACKGROUND=~/Pictures/Wallpapers/adv.jpg
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ]
 then
 	nitrogen --set-scaled $BACKGROUND
-	polybar background &
-	polybar logo &
-	polybar date &
-	polybar i3 &
-	polybar right &
-
+	polybar example &
 	picom --config ~/.config/picom/picom.conf &
 fi
