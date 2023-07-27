@@ -55,11 +55,23 @@ else:
         out += "%{F#ffffff}" +" " +  "%{F-}"
 
 if 5 == focused:
-    out += "%{F#ffffff}" + "" + "%{F-}"
+    out += "%{F#ffffff}" + " " + "%{F-}"
 else:
     exists = False
     for ws in workspaces:
         if ws.num == 5:
+            exists = True
+            out += "%{F#ffffff}" + " " + "%{F-}"
+            break
+    if not exists:
+        out += "%{F#ffffff}" + " " + "%{F-}"
+
+if 6 == focused:
+    out += "%{F#ffffff}" + "" + "%{F-}"
+else:
+    exists = False
+    for ws in workspaces:
+        if ws.num == 6:
             exists = True
             out += "%{F#ffffff}" + "" + "%{F-}"
             break
