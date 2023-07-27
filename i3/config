@@ -18,7 +18,6 @@ font pango:monospace 0
 #default_border pixel 2
 #default_floating_border pixel 2
 for_window [class="^.*"] border pixel 0
-for_window [title="Alacritty"] border pixel 45
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -26,6 +25,11 @@ for_window [title="Alacritty"] border pixel 45
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
+exec_always --no-startup-id xrandr --output DVI-D-1 --off --output DP-1 --off --output DP-2 --off --output HDMI-1 --mode 2560x1080 --pos 1080x669 --rotate normal --output HDMI-2 --mode 2560x1080 --pos 0x0 --rotate left
+exec_always --no-startup-id MONITOR=HDMI-1 polybar example --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-1 polybar secondary --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/adv.jpg
+exec_always --no-startup-id picom &
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id ~/.config/polybar/launch.sh &
 exec --no-startup-id nm-applet --sm-disable
@@ -58,7 +62,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id xterm -bd white -bw 45
 
 # kill focused window
 bindsym $mod+Shift+q kill
