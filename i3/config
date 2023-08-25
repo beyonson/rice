@@ -205,11 +205,11 @@ gaps top 50
 
 # color settings
 # class                 border  backgr. text    indicator child_border
-client.focused          #8087a2 #1e2030 #cad3f5 #939ab7   #8087a2
-client.focused_inactive #8087a2 #1e2030 #cad3f5 #939ab7   #8087a2
-client.unfocused        #5b6078 #1e2030 #cad3f5 #5b6078   #5b6078
-client.urgent           #5b6078 #1e2030 #cad3f5 #5b6078   #5b6078
-client.placeholder      #5b6078 #1e2030 #cad3f5 #5b6078   #5b6078
+client.focused          #7daea3 #1e2030 #d4be98 #a9b665   #7daea3
+client.focused_inactive #1d2021 #1e2030 #d4be98 #a9b665   #1d2021
+client.unfocused        #1d2021 #1e2030 #d4be98 #1d2021   #1d2021
+client.urgent           #1d2021 #1e2030 #d4be98 #1d2021   #1d2021
+client.placeholder      #1d2021 #1e2030 #d4be98 #1d2021   #1d2021
 
 client.background       #1e2030
 
