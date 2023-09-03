@@ -25,9 +25,9 @@ default_floating_border pixel 5
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec_always --no-startup-id xrandr --output DVI-D-1 --off --output DP-1 --off --output DP-2 --off --output HDMI-1 --mode 2560x1080 --pos 1080x669 --rotate normal --output HDMI-2 --mode 2560x1080 --pos 0x0 --rotate left
-exec_always --no-startup-id MONITOR=HDMI-1 polybar example --config=~/.config/polybar/config.ini &
-exec_always --no-startup-id MONITOR=HDMI-1 polybar secondary --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id xrandr  --output DP-1 --off --output DP-0 --off --output HDMI-0 --mode 1920x1200 --pos 1080x669 --rotate normal --output DP-0 --mode 1920x1080 --pos 0x0 --rotate left
+exec_always --no-startup-id MONITOR=HDMI-0 polybar example --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id MONITOR=HDMI-0 polybar secondary --config=~/.config/polybar/config.ini &
 exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/adv.jpg
 exec_always --no-startup-id picom &
 exec --no-startup-id dex --autostart --environment i3
@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 
 gaps inner 10
 gaps outer 0
-gaps top 50
+gaps top 60
 
 # color settings
 # class                 border  backgr. text    indicator child_border
