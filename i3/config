@@ -15,8 +15,8 @@ set $mod Mod1
 # is used in the bar {} block below.
 font pango:monospace 0
 
-default_border pixel 5
-default_floating_border pixel 5
+default_border pixel 2
+default_floating_border pixel 2
 #for_window [class="^.*"] border pixel 0
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -26,8 +26,8 @@ default_floating_border pixel 5
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec_always --no-startup-id xrandr  --output DP-1 --off --output DP-0 --off --output HDMI-0 --mode 1920x1200 --pos 1080x669 --rotate normal --output DP-0 --mode 1920x1080 --pos 0x0 --rotate left
-exec_always --no-startup-id MONITOR=HDMI-0 polybar example --config=~/.config/polybar/config.ini &
-exec_always --no-startup-id MONITOR=HDMI-0 polybar secondary --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id polybar main --config=~/.config/polybar/config.ini &
+exec_always --no-startup-id polybar secondary --config=~/.config/polybar/config.ini &
 exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/adv.jpg
 exec_always --no-startup-id picom &
 exec --no-startup-id dex --autostart --environment i3
@@ -199,9 +199,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 10
+gaps inner 6
 gaps outer 0
-gaps top 60
+gaps top 38
 
 # color settings
 # class                 border  backgr. text    indicator child_border
