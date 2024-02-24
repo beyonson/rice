@@ -199,7 +199,8 @@ bindsym $mod+r mode "resize"
 
 gaps inner 10
 gaps outer 0
-gaps top 40
+gaps top 0
+gaps bottom 30
 
 # color settings
 # class                 border  backgr. text    indicator child_border

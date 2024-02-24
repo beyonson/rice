@@ -7,11 +7,17 @@ PICOM=$HOME/.config/picom/
 ALACRITTY=$HOME/.config/alacritty/
 I3=$HOME/.config/i3/
 CONFIG=$HOME/.config/
+FLUXBOX=$HOME/.fluxbox/
 
 if [ $UID -ne 0 ]; then
     echo "Must be root"
     exit 0
 fi
+
+
+# FLUXBOX 
+echo "Setting fluxbox config" 
+cp -r fluxbox/* $FLUXBOX
 
 
 # POLYBAR
