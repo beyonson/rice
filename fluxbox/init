@@ -4,4 +4,7 @@
 session.menuFile:	~/.fluxbox/menu
 session.keyFile: ~/.fluxbox/keys
 session.styleFile: ~/.fluxbox/styles/custom
+session.screen0.toolbar.placement: TopCenter
+session.screen0.toolbar.alpha: 160
+
 .configVersion:	13

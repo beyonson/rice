@@ -2,7 +2,7 @@
 static char *shade_active_png[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 11 1 ",
-"  c #24273A",
+"  c #6E738D",
 ". c #424751",
 "X c #555962",
 "o c #575B64",

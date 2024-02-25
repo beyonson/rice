@@ -16,7 +16,7 @@ window.font:							JetBrainsMono Nerd Font-9
 ############################################################## MENU ###########
 
 menu.bevelWidth:						6
-menu.borderColor:						#24273A
+menu.borderColor:						#6E738D
 menu.borderWidth:						0
 
 menu.bullet.position:					Right
@@ -28,7 +28,7 @@ menu.unselected.pixmap: 				unselected.xpm
 
 menu.title:								flat
 menu.title.justify:						center
-menu.title.color:						#24273A
+menu.title.color:						#6E738D
 menu.title.textColor:					#EEEEEE
 
 menu.frame:								flat
@@ -43,14 +43,14 @@ menu.hilite.textColor:					#EEEEEE
 
 ############################################################## TOOLBAR ########
 
-toolbar.bevelWidth:						5
+toolbar.bevelWidth:						0
 toolbar.borderWidth:					0
-toolbar.borderColor:					#24273A
+toolbar.borderColor:					#6E738D
 toolbar.height:							32
 toolbar.justify:						center
 
 toolbar:								flat
-toolbar.color:							#24273A
+toolbar.color:							#6E738D
 
 toolbar.clock:							flat
 toolbar.clock.justify:					center
@@ -59,31 +59,31 @@ toolbar.clock.textColor:				#EEEEEE
 
 toolbar.workspace:						flat
 toolbar.workspace.justify:				Center
-toolbar.workspace.color:				#24273A
+toolbar.workspace.color:				#6E738D
 toolbar.workspace.textColor:			#EEEEEE
 
 toolbar.button:							flat
-toolbar.button.color:					#24273A
+toolbar.button.color:					#6E738D
 toolbar.button.picColor:				#EEEEEE
 toolbar.button.pressed:					flat
 toolbar.button.pressed.color:			#464B55
 toolbar.button.pressed.picColor:		#EEEEEE
 
 toolbar.iconbar.borderWidth:			0
-toolbar.iconbar.borderColor:			#24273A
+toolbar.iconbar.borderColor:			#6E738D
 toolbar.iconbar.empty:					flat
-toolbar.iconbar.empty.color:			#24273A
+toolbar.iconbar.empty.color:			#6E738D
 toolbar.iconbar.focused.borderWidth:	0
-toolbar.iconbar.focused.borderColor:	#24273A
+toolbar.iconbar.focused.borderColor:	#6E738D
 toolbar.iconbar.focused:				flat
-toolbar.iconbar.focused.color:			#24273A
+toolbar.iconbar.focused.color:			#6E738D
 toolbar.iconbar.focused.textColor:		#6BA4E7
 toolbar.iconbar.focused.justify:		center
 
 toolbar.iconbar.unfocused.borderWidth:	0
-toolbar.iconbar.unfocused.borderColor:	#24273A
+toolbar.iconbar.unfocused.borderColor:	#6E738D
 toolbar.iconbar.unfocused:				flat
-toolbar.iconbar.unfocused.color:		#24273A
+toolbar.iconbar.unfocused.color:		#6E738D
 toolbar.iconbar.unfocused.textColor:	#EEEEEE
 toolbar.iconbar.unfocused.justify:		center
 
@@ -95,35 +95,35 @@ toolbar.iconbar.unfocused.justify:		center
 window.bevelWidth:						0
 window.shade:							false
 window.borderWidth:						0
-window.borderColor:						#24273A
+window.borderColor:						#6E738D
 
 window.justify:							Center
 window.title.height:					30
 
 window.title.focus:						flat
-window.title.focus.color:				#24273A
+window.title.focus.color:				#6E738D
 
 window.title.unfocus:					flat
-window.title.unfocus.color:				#24273A
+window.title.unfocus.color:				#6E738D
 
 window.label.focus:						flat
-window.label.focus.color:				#24273A
+window.label.focus.color:				#6E738D
 window.label.focus.textColor:			#EEEEEE
 
 window.label.unfocus:					flat
-window.label.unfocus.color:				#24273A
+window.label.unfocus.color:				#6E738D
 window.label.unfocus.textColor:			#9A9A9A
 
 window.button.focus:					flat
-window.button.focus.color:      		#24273A
+window.button.focus.color:      		#6E738D
 window.button.focus.picColor:			#EEEEEE
 
 window.button.unfocus:					flat
-window.button.unfocus.Color:			#24273A
+window.button.unfocus.Color:			#6E738D
 window.button.unfocus.picColor:			#EEEEEE
 
 window.button.pressed:					flat
-window.button.pressed.color:			#24273A
+window.button.pressed.color:			#6E738D
 window.button.pressed.picColor:			#EEEEEE
 
 window.shade.pixmap:					shade-active.xpm
@@ -160,7 +160,7 @@ window.stuck.pressed.pixmap:			stick-toggled-pressed.xpm
 
 window.handleWidth:						5
 window.handle.focus:					flat
-window.handle.focus.color:				#24273A
+window.handle.focus.color:				#6E738D
 window.handle.unfocus:					flat
 window.handle.unfocus.color:			#393E49
 

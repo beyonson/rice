@@ -2,7 +2,7 @@
 static char *stick_toggled_active_png[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 20 1 ",
-"  c #24273A",
+"  c #6E738D",
 ". c #323742",
 "X c #353944",
 "o c #373C46",

@@ -61,7 +61,7 @@ Mod4 9 :Tab 9
 Mod1 Return :Exec alacritty 
 
 # open a dialog to run programs
-Mod1 P :Exec fbrun
+Mod1 P :Exec rofi -combi-modi drun#ssh -theme catppuccin-macchiato -show combi
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes

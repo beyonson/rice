@@ -2,7 +2,7 @@
 static char *shade_toggled_pressed_png[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 22 1 ",
-"  c #24273A",
+"  c #6E738D",
 ". c #323741",
 "X c #333843",
 "o c #3A3E49",

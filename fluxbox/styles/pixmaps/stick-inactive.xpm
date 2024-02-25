@@ -2,7 +2,7 @@
 static char *stick_inactive_png[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 11 1 ",
-"  c #24273A",
+"  c #6E738D",
 ". c #303540",
 "X c #333843",
 "o c #3B404A",

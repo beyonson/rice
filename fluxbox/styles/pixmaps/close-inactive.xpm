@@ -2,7 +2,7 @@
 static char *close_inactive_png[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 7 1 ",
-"  c #24273A",
+"  c #6E738D",
 ". c #323742",
 "X c #353A44",
 "o c #4E5159",

@@ -20,6 +20,8 @@ xmodmap "/home/garrett/.Xmodmap"
 
 feh --bg-fill ~/Pictures/Wallpapers/adv.jpg
 
+picom &
+
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/garrett/.fluxbox/log"
